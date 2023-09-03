@@ -12,7 +12,7 @@ const Hero = () => {
             <br />
             Secrets
           </h1>
-          <p className="text-[10px]/4 tablet:text-sm/[1.14] desktop:text-base/normal font-extralight mobile:max-w-[157px] tablet:max-w-[262px] tablet:tracking-[1.26px] desktop:tracking-[1.44px]">
+          <p className="text-[10px]/4 tablet:text-sm/[1.14] desktop:text-base/normal font-extralight mobile:max-w-[157px] tablet:max-w-[263px] tablet:tracking-[1.26px] desktop:tracking-[1.44px]">
             Hoverla / Yaremche / Zakarpattia / Vorokhta / Synevyr Lake / Bukovel
           </p>
         </div>

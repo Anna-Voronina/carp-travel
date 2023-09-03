@@ -19,6 +19,15 @@ module.exports = {
       lineHeight: {
         basic: "1.2",
       },
+      fontSize: {
+        xs: ["12px", "1.2"],
+        s: ["14px", "1.2"],
+        m: ["16px", "1.2"],
+        ms: ["18px", "1.2"],
+        l: ["40px", "1.2"],
+        xl: ["67px", "1.2"],
+        xxl: ["98px", "1.2"],
+      },
     },
   },
   plugins: [],
