@@ -4,7 +4,7 @@ const About = () => {
       className="about-bg text-white text-s/[1.42] tablet:text-m/tight desktop:text-ms/[1.33] font-extralight"
       id="#about"
     >
-      <div className="container flex flex-col gap-y-10 tablet:gap-y-16 desktop:gap-y-[72px] tablet:relative">
+      <div className="section-container flex flex-col gap-y-10 tablet:gap-y-16 desktop:gap-y-[72px] tablet:relative">
         <div className="flex mobile:flex-col mobile:gap-y-2 tablet:gap-x-[76px] desktop:gap-x-[38px]">
           <h2 className="text-l/[1.4] tablet:text-xl desktop:text-xxl font-thin tracking-[-1.6px] tablet:tracking-[-2.68px] desktop:tracking-[-3.92px] uppercase">
             WHO

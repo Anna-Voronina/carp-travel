@@ -19,6 +19,7 @@ export const navLinks = [
 
 export const servicesSlides = [
   {
+    id: 1,
     img: firstSlide,
     imgRetina: firstSlideRetina,
     title: "ATVs Traveling",
@@ -27,6 +28,7 @@ export const servicesSlides = [
       "Join exciting rafting expeditions on the waterways of the Carpathians. Go through challenging waterways and overcome gusty waves, feel the adrenaline, and enjoy the incredible views of the surrounding mountains.",
   },
   {
+    id: 2,
     img: secondSlide,
     imgRetina: secondSlideRetina,
     title: "Rock climbing",
@@ -35,6 +37,7 @@ export const servicesSlides = [
       "Overcome the peaks of the Carpathians in a unique way - climbing. Make your own way to the heights and find inner peace in the embrace of the mighty rocks.",
   },
   {
+    id: 3,
     img: thirdSlide,
     imgRetina: thirdSlideRetina,
     title: "Hot air ballooning",
@@ -43,6 +46,7 @@ export const servicesSlides = [
       "Feel Zen over the mountain peaks! Hot air ballooning gives you incredible impressions and panoramas of the Carpathians that seem endless.",
   },
   {
+    id: 4,
     img: forthSlide,
     imgRetina: forthSlideRetina,
     title: "Skydiving",
@@ -51,6 +55,7 @@ export const servicesSlides = [
       "Fly in the sky over the Carpathians! Experienced instructors will help you realize your dream of free flight. Remember the incredible emotions and panoramas from a bird's eye view forever.",
   },
   {
+    id: 5,
     img: fifthSlide,
     imgRetina: fifthSlideRetina,
     title: "Rafting",

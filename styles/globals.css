@@ -11,7 +11,7 @@
 }
 
 @layer components {
-  .container {
+  .section-container {
     padding: 56px 20px;
 
     @media only screen and (min-width: 768px) {
@@ -25,12 +25,23 @@
     }
   }
 
+  .swiper-pagination-inactive {
+    color: rgba(255, 255, 255, 0.2);
+  }
+
+  .swiper-nav-list-item::before {
+    content: "\25C6";
+    font-size: 10px;
+  }
+
   .hero-bg {
     background-image: linear-gradient(
         180deg,
-        #001826cf 0%,
-        rgba(0, 37, 49, 0) 100%
+        #0018268f 0%,
+        rgba(0, 37, 49, 0) 25%
       ),
+      linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+      linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
       url(/assets/images/hero/hero_mobile@1x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,9 +51,11 @@
       (min-resolution: 2dppx) {
       background-image: linear-gradient(
           180deg,
-          #001826cf 0%,
-          rgba(0, 37, 49, 0) 100%
+          #0018268f 0%,
+          rgba(0, 37, 49, 0) 25%
         ),
+        linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+        linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
         url(/assets/images/hero/hero_mobile@2x.jpg);
     }
   }
@@ -51,9 +64,11 @@
     .hero-bg {
       background-image: linear-gradient(
           180deg,
-          #001826cf 0%,
-          rgba(0, 37, 49, 0) 100%
+          #0018268f 0%,
+          rgba(0, 37, 49, 0) 25%
         ),
+        linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+        linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
         url(/assets/images/hero/hero_tablet@1x.jpg);
 
       @media (min-device-pixel-ratio: 2),
@@ -61,9 +76,11 @@
         (min-resolution: 2dppx) {
         background-image: linear-gradient(
             180deg,
-            #001826cf 0%,
-            rgba(0, 37, 49, 0) 100%
+            #0018268f 0%,
+            rgba(0, 37, 49, 0) 25%
           ),
+          linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+          linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
           url(/assets/images/hero/hero_tablet@2x.jpg);
       }
     }
@@ -73,9 +90,11 @@
     .hero-bg {
       background-image: linear-gradient(
           180deg,
-          #001826cf 0%,
-          rgba(0, 37, 49, 0) 100%
+          #0018268f 0%,
+          rgba(0, 37, 49, 0) 25%
         ),
+        linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+        linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
         url(/assets/images/hero/hero_desktop@1x.jpg);
 
       @media (min-device-pixel-ratio: 2),
@@ -83,9 +102,11 @@
         (min-resolution: 2dppx) {
         background-image: linear-gradient(
             180deg,
-            #001826cf 0%,
-            rgba(0, 37, 49, 0) 100%
+            #0018268f 0%,
+            rgba(0, 37, 49, 0) 25%
           ),
+          linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+          linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
           url(/assets/images/hero/hero_desktop@2x.jpg);
       }
     }
@@ -94,9 +115,11 @@
   .about-bg {
     background-image: linear-gradient(
         180deg,
-        #001826cf 0%,
-        rgba(0, 37, 49, 0) 100%
+        #0018268f 0%,
+        rgba(0, 37, 49, 0) 25%
       ),
+      linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+      linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
       url(/assets/images/about/about_mobile@1x.jpg);
 
     background-position: center;
@@ -108,9 +131,11 @@
       (min-resolution: 2dppx) {
       background-image: linear-gradient(
           180deg,
-          #001826cf 0%,
-          rgba(0, 37, 49, 0) 100%
+          #0018268f 0%,
+          rgba(0, 37, 49, 0) 25%
         ),
+        linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+        linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
         url(/assets/images/about/about_mobile@2x.jpg);
     }
   }
@@ -119,9 +144,11 @@
     .about-bg {
       background-image: linear-gradient(
           180deg,
-          #001826cf 0%,
-          rgba(0, 37, 49, 0) 100%
+          #0018268f 0%,
+          rgba(0, 37, 49, 0) 25%
         ),
+        linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+        linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
         url(/assets/images/about/about_tablet@1x.jpg);
 
       @media (min-device-pixel-ratio: 2),
@@ -129,9 +156,11 @@
         (min-resolution: 2dppx) {
         background-image: linear-gradient(
             180deg,
-            #001826cf 0%,
-            rgba(0, 37, 49, 0) 100%
+            #0018268f 0%,
+            rgba(0, 37, 49, 0) 25%
           ),
+          linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+          linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
           url(/assets/images/about/about_tablet@2x.jpg);
       }
     }
@@ -141,9 +170,11 @@
     .about-bg {
       background-image: linear-gradient(
           180deg,
-          #001826cf 0%,
-          rgba(0, 37, 49, 0) 100%
+          #0018268f 0%,
+          rgba(0, 37, 49, 0) 25%
         ),
+        linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+        linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
         url(/assets/images/about/about_desktop@1x.jpg);
 
       @media (min-device-pixel-ratio: 2),
@@ -151,9 +182,11 @@
         (min-resolution: 2dppx) {
         background-image: linear-gradient(
             180deg,
-            #001826cf 0%,
-            rgba(0, 37, 49, 0) 100%
+            #0018268f 0%,
+            rgba(0, 37, 49, 0) 25%
           ),
+          linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+          linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
           url(/assets/images/about/about_desktop@2x.jpg);
       }
     }
@@ -162,9 +195,11 @@
   .services-bg {
     background-image: linear-gradient(
         180deg,
-        #001826cf 0%,
-        rgba(0, 37, 49, 0) 100%
+        #0018268f 0%,
+        rgba(0, 37, 49, 0) 25%
       ),
+      linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+      linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
       url(/assets/images/services/background/slide_1_mobile@1x.jpg);
 
     background-position: center;
@@ -176,9 +211,11 @@
       (min-resolution: 2dppx) {
       background-image: linear-gradient(
           180deg,
-          #001826cf 0%,
-          rgba(0, 37, 49, 0) 100%
+          #0018268f 0%,
+          rgba(0, 37, 49, 0) 25%
         ),
+        linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+        linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
         url(/assets/images/services/background/slide_1_mobile@2x.jpg);
     }
   }
@@ -187,9 +224,11 @@
     .services-bg {
       background-image: linear-gradient(
           180deg,
-          #001826cf 0%,
-          rgba(0, 37, 49, 0) 100%
+          #0018268f 0%,
+          rgba(0, 37, 49, 0) 25%
         ),
+        linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+        linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
         url(/assets/images/services/background/slide_1_tablet@1x.jpg);
 
       @media (min-device-pixel-ratio: 2),
@@ -197,9 +236,11 @@
         (min-resolution: 2dppx) {
         background-image: linear-gradient(
             180deg,
-            #001826cf 0%,
-            rgba(0, 37, 49, 0) 100%
+            #0018268f 0%,
+            rgba(0, 37, 49, 0) 25%
           ),
+          linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+          linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
           url(/assets/images/services/background/slide_1_tablet@2x.jpg);
       }
     }
@@ -209,9 +250,11 @@
     .services-bg {
       background-image: linear-gradient(
           180deg,
-          #001826cf 0%,
-          rgba(0, 37, 49, 0) 100%
+          #0018268f 0%,
+          rgba(0, 37, 49, 0) 25%
         ),
+        linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+        linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
         url(/assets/images/services/background/slide_1_desktop@1x.jpg);
 
       @media (min-device-pixel-ratio: 2),
@@ -219,9 +262,11 @@
         (min-resolution: 2dppx) {
         background-image: linear-gradient(
             180deg,
-            #001826cf 0%,
-            rgba(0, 37, 49, 0) 100%
+            #0018268f 0%,
+            rgba(0, 37, 49, 0) 25%
           ),
+          linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+          linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
           url(/assets/images/services/background/slide_1_desktop@2x.jpg);
       }
     }
