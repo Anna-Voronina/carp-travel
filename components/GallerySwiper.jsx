@@ -23,6 +23,11 @@ const GallerySwiper = () => {
         loop={true}
         slidesPerView={"auto"}
         initialSlide={1}
+        breakpoints={{
+          1280: {
+            spaceBetween: 150,
+          },
+        }}
         modules={[Navigation, EffectCoverflow]}
         coverflowEffect={{
           rotate: 0,

@@ -7,6 +7,15 @@ import ServicesSwiper from "./ServicesSwiper.jsx";
 import ServicesSwiperNavigation from "./ServicesSwiperNavigation.jsx";
 import Gallery from "./Gallery.jsx";
 import GallerySwiper from "./GallerySwiper.jsx";
+import Career from "./Career.jsx";
+import CareerTopPart from "./CareerTopPart.jsx";
+import CareerFirstPart from "./CareerFirstPart.jsx";
+import CareerSecondPart from "./CareerSecondPart.jsx";
+import CareerForm from "./CareerForm.jsx";
+import Input from "./Input.jsx";
+import FormError from "./FormError.jsx";
+import Checkbox from "./Checkbox.jsx";
+import Textarea from "./Textarea.jsx";
 
 export {
   Header,
@@ -18,4 +27,13 @@ export {
   ServicesSwiperNavigation,
   Gallery,
   GallerySwiper,
+  Career,
+  CareerForm,
+  Input,
+  FormError,
+  Checkbox,
+  Textarea,
+  CareerTopPart,
+  CareerFirstPart,
+  CareerSecondPart,
 };

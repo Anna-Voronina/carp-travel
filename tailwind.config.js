@@ -15,6 +15,8 @@ module.exports = {
       colors: {
         btnBg: "rgba(255, 255, 255, 0.10)",
         menuBg: "rgba(1, 10, 5, 0.75)",
+        inputBg: "rgba(255, 255, 255, 0.05)",
+        errorText: "#FF5757",
       },
       lineHeight: {
         basic: "1.2",

@@ -34,6 +34,20 @@
     font-size: 10px;
   }
 
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
   /* ============ HERO ============ */
 
   .hero-bg {
@@ -274,6 +288,88 @@
           linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
           linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
           url(/assets/images/services/background/slide_1_desktop@2x.jpg);
+      }
+    }
+  }
+
+  /* ============ CAREER ============ */
+
+  .career-bg {
+    background-image: linear-gradient(
+        180deg,
+        #0018268f 0%,
+        rgba(0, 37, 49, 0) 25%
+      ),
+      linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+      linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)),
+      url(/assets/images/career/career_mobile@1x.jpg);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          180deg,
+          #0018268f 0%,
+          rgba(0, 37, 49, 0) 25%
+        ),
+        linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+        linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)),
+        url(/assets/images/career/career_mobile@2x.jpg);
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .career-bg {
+      background-image: linear-gradient(
+          180deg,
+          #0018268f 0%,
+          rgba(0, 37, 49, 0) 25%
+        ),
+        linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+        linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)),
+        url(/assets/images/career/career_tablet@1x.jpg);
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            180deg,
+            #0018268f 0%,
+            rgba(0, 37, 49, 0) 25%
+          ),
+          linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+          linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)),
+          url(/assets/images/career/career_tablet@2x.jpg);
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1280px) {
+    .career-bg {
+      background-image: linear-gradient(
+          180deg,
+          #0018268f 0%,
+          rgba(0, 37, 49, 0) 25%
+        ),
+        linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+        linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)),
+        url(/assets/images/career/career_desktop@1x.jpg);
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            180deg,
+            #0018268f 0%,
+            rgba(0, 37, 49, 0) 25%
+          ),
+          linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+          linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)),
+          url(/assets/images/career/career_desktop@2x.jpg);
       }
     }
   }

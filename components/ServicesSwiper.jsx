@@ -38,8 +38,7 @@ const ServicesSwiper = () => {
               alt={title}
               quality={95}
               placeholder="blur"
-              layout="responsive"
-              className="mobile:mb-3 tablet:max-w-[463px]"
+              className="mobile:mb-3 tablet:max-w-[463px] desktop:max-w-[607px]"
             />
             <div className="flex flex-col mobile:gap-y-[224px] tablet:mt-[192px] tablet:gap-y-[34px] tablet:max-w-[221px]">
               <p className="text-xs/loose font-extralight tracking-[2.4px] mobile:text-right">
