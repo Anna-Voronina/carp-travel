@@ -20,7 +20,7 @@ const ServicesSwiperNavigation = () => {
         <li
           key={id}
           onClick={() => handleSlideChange(index)}
-          className={`flex items-center gap-x-2 ${
+          className={`flex items-center gap-x-2 cursor-pointer ${
             activeIndex === index
               ? "font-medium swiper-nav-list-item"
               : "opacity-50"

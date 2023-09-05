@@ -1,13 +1,12 @@
-import firstSlide from "../public/assets/images/services/slides/slide_1@1x.jpg";
-import firstSlideRetina from "../public/assets/images/services/slides/slide_1@2x.jpg";
-import secondSlide from "../public/assets/images/services/slides/slide_2@1x.jpg";
-import secondSlideRetina from "../public/assets/images/services/slides/slide_2@2x.jpg";
-import thirdSlide from "../public/assets/images/services/slides/slide_3@1x.jpg";
-import thirdSlideRetina from "../public/assets/images/services/slides/slide_3@2x.jpg";
-import forthSlide from "../public/assets/images/services/slides/slide_4@1x.jpg";
-import forthSlideRetina from "../public/assets/images/services/slides/slide_4@2x.jpg";
-import fifthSlide from "../public/assets/images/services/slides/slide_5@1x.jpg";
-import fifthSlideRetina from "../public/assets/images/services/slides/slide_5@2x.jpg";
+import firstSlide from "../public/assets/images/services/slides/slide_1.jpg";
+import secondSlide from "../public/assets/images/services/slides/slide_2.jpg";
+import thirdSlide from "../public/assets/images/services/slides/slide_3.jpg";
+import forthSlide from "../public/assets/images/services/slides/slide_4.jpg";
+import fifthSlide from "../public/assets/images/services/slides/slide_5.jpg";
+
+import galleryFirstSlide from "../public/assets/images/gallery/slides/mountains.jpg";
+import gallerySecondSlide from "../public/assets/images/gallery/slides/lake.jpg";
+import galleryThirdSlide from "../public/assets/images/gallery/slides/forest.jpg";
 
 export const navLinks = [
   { label: "About", link: "#about" },
@@ -21,7 +20,6 @@ export const servicesSlides = [
   {
     id: 1,
     img: firstSlide,
-    imgRetina: firstSlideRetina,
     title: "ATVs Traveling",
     subtitle: "Feel the adrenaline rush",
     description:
@@ -30,7 +28,6 @@ export const servicesSlides = [
   {
     id: 2,
     img: secondSlide,
-    imgRetina: secondSlideRetina,
     title: "Rock climbing",
     subtitle: "Destroy your limitations",
     description:
@@ -39,7 +36,6 @@ export const servicesSlides = [
   {
     id: 3,
     img: thirdSlide,
-    imgRetina: thirdSlideRetina,
     title: "Hot air ballooning",
     subtitle: "Get Inspired",
     description:
@@ -48,7 +44,6 @@ export const servicesSlides = [
   {
     id: 4,
     img: forthSlide,
-    imgRetina: forthSlideRetina,
     title: "Skydiving",
     subtitle: "Overcome your fears",
     description:
@@ -57,10 +52,42 @@ export const servicesSlides = [
   {
     id: 5,
     img: fifthSlide,
-    imgRetina: fifthSlideRetina,
     title: "Rafting",
     subtitle: "Trust the flow",
     description:
       "Join exciting rafting expeditions on the waterways of the Carpathians. Go through challenging waterways and overcome gusty waves, feel the adrenaline, and enjoy the incredible views of the surrounding mountains.",
+  },
+];
+
+export const galleryImages = [
+  {
+    id: 1,
+    label: "mountains",
+    img: galleryFirstSlide,
+  },
+  {
+    id: 2,
+    label: "lake",
+    img: gallerySecondSlide,
+  },
+  {
+    id: 3,
+    label: "forest",
+    img: galleryThirdSlide,
+  },
+  {
+    id: 4,
+    label: "mountains",
+    img: galleryFirstSlide,
+  },
+  {
+    id: 5,
+    label: "lake",
+    img: gallerySecondSlide,
+  },
+  {
+    id: 6,
+    label: "forest",
+    img: galleryThirdSlide,
   },
 ];
