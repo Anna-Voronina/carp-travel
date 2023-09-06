@@ -4,9 +4,7 @@ import { useState } from "react";
 import { useSwiper } from "swiper/react";
 import { servicesSlides } from "@data";
 
-const ServicesSwiperNavigation = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-
+const ServicesSwiperNavigation = ({ activeIndex, setActiveIndex }) => {
   const swiper = useSwiper();
 
   const handleSlideChange = (index) => {
@@ -24,7 +22,7 @@ const ServicesSwiperNavigation = () => {
             activeIndex === index
               ? "font-medium swiper-nav-list-item"
               : "opacity-50"
-          }`}
+          } hover:opacity-100 focus:opacity-100 transition-opacity`}
         >
           {title}
         </li>

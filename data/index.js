@@ -9,11 +9,11 @@ import gallerySecondSlide from "../public/assets/images/gallery/slides/lake.jpg"
 import galleryThirdSlide from "../public/assets/images/gallery/slides/forest.jpg";
 
 export const navLinks = [
-  { label: "About", link: "#about" },
-  { label: "Services", link: "#services" },
-  { label: "Career", link: "#career" },
-  { label: "Gallery", link: "#gallery" },
-  { label: "Contacts", link: "#contacts" },
+  { label: "About", link: "about" },
+  { label: "Services", link: "services" },
+  { label: "Career", link: "career" },
+  { label: "Gallery", link: "gallery" },
+  { label: "Contacts", link: "contacts" },
 ];
 
 export const servicesSlides = [
@@ -123,4 +123,12 @@ export const socialMediaLinks = [
   { id: 2, title: "instagram" },
   { id: 3, title: "youtube" },
   { id: 4, title: "tiktok" },
+];
+
+export const servicesSectionBackgrounds = [
+  "services-bg-0",
+  "services-bg-1",
+  "services-bg-2",
+  "services-bg-3",
+  "services-bg-4",
 ];

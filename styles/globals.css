@@ -25,6 +25,19 @@
     }
   }
 
+  .link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: #ffffff;
+    transition: width cubic-bezier(0.4, 0, 0.2, 1) 150ms;
+  }
+
+  .link:hover::after {
+    width: 100%;
+  }
+
   .swiper-pagination-inactive {
     color: rgba(255, 255, 255, 0.2);
   }
@@ -212,7 +225,7 @@
 
   /* ============ SERVICES ============ */
 
-  .services-bg {
+  .services-bg-0 {
     background-image: linear-gradient(
         180deg,
         #0018268f 0%,
@@ -241,7 +254,7 @@
   }
 
   @media only screen and (min-width: 768px) {
-    .services-bg {
+    .services-bg-0 {
       background-image: linear-gradient(
           180deg,
           #0018268f 0%,
@@ -267,7 +280,7 @@
   }
 
   @media only screen and (min-width: 1280px) {
-    .services-bg {
+    .services-bg-0 {
       background-image: linear-gradient(
           180deg,
           #0018268f 0%,
@@ -288,6 +301,326 @@
           linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
           linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
           url(/assets/images/services/background/slide_1_desktop@2x.jpg);
+      }
+    }
+  }
+
+  .services-bg-1 {
+    background-image: linear-gradient(
+        180deg,
+        #0018268f 0%,
+        rgba(0, 37, 49, 0) 25%
+      ),
+      linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+      linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+      url(/assets/images/services/background/slide_2_mobile@1x.jpg);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          180deg,
+          #0018268f 0%,
+          rgba(0, 37, 49, 0) 25%
+        ),
+        linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+        linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+        url(/assets/images/services/background/slide_2_mobile@2x.jpg);
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .services-bg-1 {
+      background-image: linear-gradient(
+          180deg,
+          #0018268f 0%,
+          rgba(0, 37, 49, 0) 25%
+        ),
+        linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+        linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+        url(/assets/images/services/background/slide_2_tablet@1x.jpg);
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            180deg,
+            #0018268f 0%,
+            rgba(0, 37, 49, 0) 25%
+          ),
+          linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+          linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+          url(/assets/images/services/background/slide_2_tablet@2x.jpg);
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1280px) {
+    .services-bg-1 {
+      background-image: linear-gradient(
+          180deg,
+          #0018268f 0%,
+          rgba(0, 37, 49, 0) 25%
+        ),
+        linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+        linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+        url(/assets/images/services/background/slide_2_desktop@1x.jpg);
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            180deg,
+            #0018268f 0%,
+            rgba(0, 37, 49, 0) 25%
+          ),
+          linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+          linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+          url(/assets/images/services/background/slide_2_desktop@2x.jpg);
+      }
+    }
+  }
+
+  .services-bg-2 {
+    background-image: linear-gradient(
+        180deg,
+        #0018268f 0%,
+        rgba(0, 37, 49, 0) 25%
+      ),
+      linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+      linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+      url(/assets/images/services/background/slide_3_mobile@1x.jpg);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          180deg,
+          #0018268f 0%,
+          rgba(0, 37, 49, 0) 25%
+        ),
+        linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+        linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+        url(/assets/images/services/background/slide_3_mobile@2x.jpg);
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .services-bg-2 {
+      background-image: linear-gradient(
+          180deg,
+          #0018268f 0%,
+          rgba(0, 37, 49, 0) 25%
+        ),
+        linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+        linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+        url(/assets/images/services/background/slide_3_tablet@1x.jpg);
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            180deg,
+            #0018268f 0%,
+            rgba(0, 37, 49, 0) 25%
+          ),
+          linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+          linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+          url(/assets/images/services/background/slide_3_tablet@2x.jpg);
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1280px) {
+    .services-bg-2 {
+      background-image: linear-gradient(
+          180deg,
+          #0018268f 0%,
+          rgba(0, 37, 49, 0) 25%
+        ),
+        linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+        linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+        url(/assets/images/services/background/slide_3_desktop@1x.jpg);
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            180deg,
+            #0018268f 0%,
+            rgba(0, 37, 49, 0) 25%
+          ),
+          linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+          linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+          url(/assets/images/services/background/slide_3_desktop@2x.jpg);
+      }
+    }
+  }
+
+  .services-bg-3 {
+    background-image: linear-gradient(
+        180deg,
+        #0018268f 0%,
+        rgba(0, 37, 49, 0) 25%
+      ),
+      linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+      linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+      url(/assets/images/services/background/slide_4_mobile@1x.jpg);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          180deg,
+          #0018268f 0%,
+          rgba(0, 37, 49, 0) 25%
+        ),
+        linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+        linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+        url(/assets/images/services/background/slide_4_mobile@2x.jpg);
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .services-bg-3 {
+      background-image: linear-gradient(
+          180deg,
+          #0018268f 0%,
+          rgba(0, 37, 49, 0) 25%
+        ),
+        linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+        linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+        url(/assets/images/services/background/slide_4_tablet@1x.jpg);
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            180deg,
+            #0018268f 0%,
+            rgba(0, 37, 49, 0) 25%
+          ),
+          linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+          linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+          url(/assets/images/services/background/slide_4_tablet@2x.jpg);
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1280px) {
+    .services-bg-3 {
+      background-image: linear-gradient(
+          180deg,
+          #0018268f 0%,
+          rgba(0, 37, 49, 0) 25%
+        ),
+        linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+        linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+        url(/assets/images/services/background/slide_4_desktop@1x.jpg);
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            180deg,
+            #0018268f 0%,
+            rgba(0, 37, 49, 0) 25%
+          ),
+          linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+          linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+          url(/assets/images/services/background/slide_4_desktop@2x.jpg);
+      }
+    }
+  }
+
+  .services-bg-4 {
+    background-image: linear-gradient(
+        180deg,
+        #0018268f 0%,
+        rgba(0, 37, 49, 0) 25%
+      ),
+      linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+      linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+      url(/assets/images/services/background/slide_5_mobile@1x.jpg);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          180deg,
+          #0018268f 0%,
+          rgba(0, 37, 49, 0) 25%
+        ),
+        linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+        linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+        url(/assets/images/services/background/slide_5_mobile@2x.jpg);
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .services-bg-4 {
+      background-image: linear-gradient(
+          180deg,
+          #0018268f 0%,
+          rgba(0, 37, 49, 0) 25%
+        ),
+        linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+        linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+        url(/assets/images/services/background/slide_5_tablet@1x.jpg);
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            180deg,
+            #0018268f 0%,
+            rgba(0, 37, 49, 0) 25%
+          ),
+          linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+          linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+          url(/assets/images/services/background/slide_5_tablet@2x.jpg);
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1280px) {
+    .services-bg-4 {
+      background-image: linear-gradient(
+          180deg,
+          #0018268f 0%,
+          rgba(0, 37, 49, 0) 25%
+        ),
+        linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+        linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+        url(/assets/images/services/background/slide_5_desktop@1x.jpg);
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            180deg,
+            #0018268f 0%,
+            rgba(0, 37, 49, 0) 25%
+          ),
+          linear-gradient(360deg, #0018268f 0%, rgba(0, 37, 49, 0) 25%),
+          linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+          url(/assets/images/services/background/slide_5_desktop@2x.jpg);
       }
     }
   }

@@ -10,7 +10,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 
-const ServicesSwiper = () => {
+const ServicesSwiper = ({ activeIndex, setActiveIndex }) => {
   const topPagination = {
     el: ".pagination",
     type: "custom",
@@ -51,8 +51,11 @@ const ServicesSwiper = () => {
           </div>
         </SwiperSlide>
       ))}
-      <div className="absolute !top-0 !right-0 !left-auto mobile:max-h-[52px] tablet:max-h-[78px] desktop:max-h-[120px] text-right pagination text-[43px]/basic tablet:text-xl/[1.16] desktop:text-xxl font-thin"></div>
-      <ServicesSwiperNavigation />
+      <div className="absolute !top-0 !right-0 !left-auto tablet:!left-[483px] desktop:!left-[644px] mobile:max-h-[52px] tablet:max-h-[78px] desktop:max-h-[120px] tablet:max-w-[157px] desktop:max-w-[244px] text-right pagination text-[43px]/basic tablet:text-xl/[1.16] desktop:text-xxl font-thin"></div>
+      <ServicesSwiperNavigation
+        activeIndex={activeIndex}
+        setActiveIndex={setActiveIndex}
+      />
     </Swiper>
   );
 };
