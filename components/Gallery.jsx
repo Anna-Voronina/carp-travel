@@ -5,7 +5,7 @@ import SectionTitle from "./SectionTitle";
 
 const Gallery = () => {
   return (
-    <section className="gallery-bg text-white">
+    <section id="gallery" className="gallery-bg text-white">
       <div className="section-container md:flex md:flex-col tablet:gap-y-16 desktop:gap-y-6 items-center">
         <SectionTitle
           thinText="OUR"
@@ -13,7 +13,7 @@ const Gallery = () => {
           additionalStyles="mobile:mb-6 desktop:self-start"
         />
         <ul className="flex flex-col gap-y-6 md:hidden">
-          {galleryImages.map(({ id, label, img }) => (
+          {galleryImages.slice(0, 3).map(({ id, label, img }) => (
             <li key={id}>
               <Image src={img} alt={label} quality={95} placeholder="blur" />
             </li>

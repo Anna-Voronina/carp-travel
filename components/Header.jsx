@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { Link } from "react-scroll";
 import MobileMenu from "./MobileMenu";
 import { navLinks } from "@data";
 import logo from "../public/assets/icons/logo.svg";
@@ -17,7 +18,10 @@ const Header = () => {
   return (
     <header className="absolute min-w-full">
       <nav className="flex justify-between items-center px-5 py-9 tablet:px-8 tablet:py-[25px] desktop:px-[104px] desktop:py-6">
-        <a href="/">
+        <a
+          href="/"
+          className="hover:scale-110 focus:scale-110 transition-transform"
+        >
           <Image src={logo} width={61} height={33} alt="CarpTravel logo" />
         </a>
         <button
@@ -31,7 +35,15 @@ const Header = () => {
         <ul className="mobile:hidden flex gap-x-6 desktop:gap-x-14 text-white text-sm font-normal tracking-[1.4px]">
           {navLinks.map(({ link, label }) => (
             <li key={label}>
-              <a href={link}>{label}</a>
+              <Link
+                to={link}
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="link cursor-pointer"
+              >
+                {label}
+              </Link>
             </li>
           ))}
         </ul>

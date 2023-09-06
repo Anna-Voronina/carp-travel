@@ -3,8 +3,8 @@ import SectionTitle from "./SectionTitle";
 const About = () => {
   return (
     <section
+      id="about"
       className="about-bg text-white text-s/[1.42] tablet:text-m/tight desktop:text-ms/[1.33] font-extralight"
-      id="#about"
     >
       <div className="section-container flex flex-col gap-y-10 tablet:gap-y-16 desktop:gap-y-[72px] tablet:relative">
         <div className="flex mobile:flex-col mobile:gap-y-2 tablet:gap-x-[76px] desktop:gap-x-[38px]">

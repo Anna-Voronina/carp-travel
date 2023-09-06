@@ -1,4 +1,5 @@
 import { navLinks } from "@data";
+import { Link } from "react-scroll";
 
 const MobileMenu = ({ menuOpen, setMenuOpen }) => {
   const handleMenuClose = () => {
@@ -23,9 +24,16 @@ const MobileMenu = ({ menuOpen, setMenuOpen }) => {
         <ul className="flex flex-col gap-y-12 justify-center items-center text-white text-lg font-normal tracking-[1.8px] leading-tight">
           {navLinks.map(({ link, label }) => (
             <li key={label}>
-              <a href={link} onClick={handleMenuClose}>
+              <Link
+                to={link}
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="link"
+                onClick={handleMenuClose}
+              >
                 {label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

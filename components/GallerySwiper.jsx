@@ -48,8 +48,12 @@ const GallerySwiper = () => {
           </SwiperSlide>
         ))}
         <div className="flex justify-between mt-6 px-11 desktop:px-16 text-[33px]/basic font-thin uppercase">
-          <div className="prev cursor-pointer">BACK</div>
-          <div className="next cursor-pointer">NEXT</div>
+          <div className="prev cursor-pointer hover:scale-110 focus:scale-110 transition-transform">
+            BACK
+          </div>
+          <div className="next cursor-pointer hover:scale-110 focus:scale-110 transition-transform">
+            NEXT
+          </div>
         </div>
       </Swiper>
     </div>

@@ -20,7 +20,7 @@ const Checkbox = ({
         id={label}
         onChange={handleCheckboxChange}
       />
-      <label htmlFor={label} className="flex gap-x-2">
+      <label htmlFor={label} className="flex gap-x-2 cursor-pointer">
         <span className="flex justify-center items-center w-6 h-6 px-1 py-1 border border-white">
           <span
             className={`block w-4 h-4 bg-white transition-opacity ${

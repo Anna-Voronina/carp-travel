@@ -4,7 +4,7 @@ import CareerTopPart from "./CareerTopPart";
 
 const Career = () => {
   return (
-    <section className="md:career-bg text-white">
+    <section id="career" className="md:career-bg text-white">
       <div className="md:section-container">
         <div className="mobile:hidden flex gap-x-[115px] desktop:justify-between tablet:mb-3 desktop:mb-6">
           <CareerTopPart />

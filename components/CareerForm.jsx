@@ -97,7 +97,7 @@ const CareerForm = () => {
             pattern={PHONE_REGEXP}
           >
             {errors.phone?.type === "required" && (
-              <FormError text="Phone number field is required" />
+              <FormError text="Phone field is required" />
             )}
             {errors.phone?.type === "pattern" && (
               <FormError text="Incorrect phone" />
@@ -107,7 +107,7 @@ const CareerForm = () => {
         <Textarea register={register} label="message" variant="career" />
       </div>
 
-      <div className="flex mobile:flex-col mpbile:gap-y-4 md:justify-between">
+      <div className="flex mobile:flex-col mobile:gap-y-4 md:justify-between">
         <Checkbox
           register={register}
           label="confirmation"

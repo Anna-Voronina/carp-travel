@@ -1,3 +1,6 @@
+"use client";
+
+import { Link } from "react-scroll";
 import Frame from "./Frame";
 
 const Hero = () => {
@@ -34,15 +37,18 @@ const Hero = () => {
               the Carpathians. Enjoy stunning views, exciting expeditions, and
               the best service!
             </p>
-            <a
-              href="#contacts"
-              className="relative flex justify-center items-center bg-btnBg min-h-[53px] tablet:min-h-[50px] desktop:min-h-[71px]"
+            <Link
+              to="contacts"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="relative flex justify-center items-center bg-btnBg hover:bg-hoverBg focus:bg-hoverBg min-h-[53px] tablet:min-h-[50px] desktop:min-h-[71px] transition cursor-pointer"
             >
               <Frame />
               <span className="text-lg/[2.67] font-bold tablet:leading-basic desktop:text-[32px]/basic">
                 JOIN NOW
               </span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm";
 
 const Contacts = () => {
   return (
-    <section className="contacts-bg text-white">
+    <section id="contacts" className="contacts-bg text-white">
       <div className="section-container">
         <SectionTitle thinText="Contact" boldText="US" />
         <div className="flex flex-col desktop:flex-row mobile:gap-y-3 tablet:gap-y-16 mt-9 desktop:mt-[71px] desktop:justify-between">
@@ -13,10 +13,20 @@ const Contacts = () => {
               <div className="flex gap-x-5">
                 <ul className="text-right w-[60%] tablet:w-[63%] desktop:w-[70%]">
                   <li>
-                    <a href="tel:+380981234567">+38 (098) 12 34 567</a>
+                    <a
+                      className="link block mobile:w-[140px] tablet:w-[150px] desktop:w-[180px] ml-auto"
+                      href="tel:+380981234567"
+                    >
+                      +38 (098) 12 34 567
+                    </a>
                   </li>
                   <li>
-                    <a href="tel:+380731234567">+38 (073) 12 34 567</a>
+                    <a
+                      className="link block mobile:w-[140px] tablet:w-[150px] desktop:w-[180px] ml-auto"
+                      href="tel:+380731234567"
+                    >
+                      +38 (073) 12 34 567
+                    </a>
                   </li>
                 </ul>
                 <h3 className="text-xs/[1.67] desktop:text-xs/loose font-extralight">
@@ -27,7 +37,7 @@ const Contacts = () => {
               <div className="flex gap-x-5">
                 <a
                   href="mailto:support@carptravel.com"
-                  className="text-right w-[60%] tablet:w-[63%] desktop:w-[70%]"
+                  className="link block text-right w-[60%] tablet:w-[63%] desktop:w-[70%]"
                 >
                   support@carptravel.com
                 </a>
@@ -44,7 +54,12 @@ const Contacts = () => {
               <ul className="desktop:w-[70%] desktop:text-right">
                 {socialMediaLinks.map(({ id, title }) => (
                   <li key={id}>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a
+                      className="link"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       {title}
                     </a>
                   </li>
