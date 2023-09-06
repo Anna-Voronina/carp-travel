@@ -16,6 +16,10 @@ import Input from "./Input.jsx";
 import FormError from "./FormError.jsx";
 import Checkbox from "./Checkbox.jsx";
 import Textarea from "./Textarea.jsx";
+import Contacts from "./Contacts.jsx";
+import SectionTitle from "./SectionTitle.jsx";
+import ContactForm from "./ContactForm.jsx";
+import Button from "./Button.jsx";
 
 export {
   Header,
@@ -36,4 +40,8 @@ export {
   CareerTopPart,
   CareerFirstPart,
   CareerSecondPart,
+  Contacts,
+  SectionTitle,
+  ContactForm,
+  Button,
 };

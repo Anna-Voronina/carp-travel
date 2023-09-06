@@ -2,8 +2,8 @@ import Frame from "./Frame";
 
 const Hero = () => {
   return (
-    <section className="hero-bg pt-[105px] tablet:pt-[124px] desktop:pt-[130px] px-5 tablet:px-8 desktop:px-[104px] pb-14 tablet:pb-[64px] desktop:pb-[104px] text-white">
-      <div className="relative pt-[76px] md:pt-0 flex mobile:flex-col flex-row mobile:gap-y-6 md:justify-between">
+    <section className="hero-bg pt-[105px] tablet:pt-[124px] desktop:pt-[130px] pb-14 tablet:pb-[64px] desktop:pb-[104px] text-white">
+      <div className="relative px-5 tablet:px-8 desktop:px-[104px] pt-[76px] md:pt-0 flex mobile:flex-col flex-row mobile:gap-y-6 md:justify-between desktop:max-w-[1440px] desktop:mx-auto">
         <div className="flex flex-col mobile:gap-y-6 tablet:gap-y-[68px] desktop:gap-y-[148px]">
           <h1 className="text-[40px] tablet:text-[67px] desktop:text-[98px] font-thin mobile:leading-[1.4] leading-basic uppercase tracking-[-1.6px] tablet:tracking-[-2.68px] desktop:tracking-[-3.92px]">
             <span className="font-medium">Uncover</span>

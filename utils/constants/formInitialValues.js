@@ -6,3 +6,9 @@ export const careerFormInitialValues = {
   message: "",
   confirmation: false,
 };
+
+export const contactFormInitialValues = {
+  fullName: "",
+  email: "",
+  message: "",
+};

@@ -1,3 +1,5 @@
+import SectionTitle from "./SectionTitle";
+
 const About = () => {
   return (
     <section
@@ -6,10 +8,7 @@ const About = () => {
     >
       <div className="section-container flex flex-col gap-y-10 tablet:gap-y-16 desktop:gap-y-[72px] tablet:relative">
         <div className="flex mobile:flex-col mobile:gap-y-2 tablet:gap-x-[76px] desktop:gap-x-[38px]">
-          <h2 className="text-l/[1.4] tablet:text-xl desktop:text-xxl font-thin tracking-[-1.6px] tablet:tracking-[-2.68px] desktop:tracking-[-3.92px] uppercase">
-            WHO
-            <span className="font-medium"> WE ARE</span>
-          </h2>
+          <SectionTitle thinText="WHO" boldText="WE ARE" />
           <div className="flex flex-col gap-y-5 tablet:gap-y-4 desktop:gap-y-6 mobile:max-w-[180px] tablet:max-w-[220px] desktop:max-w-[292px] tablet:mt-[10px] desktop:mt-4">
             <p>
               <span className="font-normal">a team of enthusiasts </span>

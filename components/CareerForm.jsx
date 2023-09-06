@@ -6,6 +6,7 @@ import Input from "./Input";
 import FormError from "./FormError";
 import Checkbox from "./Checkbox";
 import Textarea from "./Textarea";
+import Button from "./Button";
 import {
   EMAIL_REGEXP,
   NAME_REGEXP,
@@ -28,7 +29,7 @@ const CareerForm = () => {
   const onSubmit = (data) => {
     console.log(data);
     setIsCheckboxChecked(false);
-    reset(initialValues);
+    reset();
   };
 
   return (
@@ -69,7 +70,7 @@ const CareerForm = () => {
               <FormError text="E-mail field is required" />
             )}
             {errors.email?.type === "pattern" && (
-              <FormError text="Incorrect email" />
+              <FormError text="Invalid email" />
             )}
           </Input>
           <Input
@@ -103,7 +104,7 @@ const CareerForm = () => {
             )}
           </Input>
         </div>
-        <Textarea register={register} label="message" />
+        <Textarea register={register} label="message" variant="career" />
       </div>
 
       <div className="flex mobile:flex-col mpbile:gap-y-4 md:justify-between">
@@ -118,12 +119,7 @@ const CareerForm = () => {
             <FormError text="Please confirm your consent" />
           )}
         </Checkbox>
-        <button
-          type="submit"
-          className="cursor-pointer text-[30px]/basic desktop:text-[32px] font-medium self-end"
-        >
-          SEND
-        </button>
+        <Button type="submit" text="SEND" />
       </div>
     </form>
   );

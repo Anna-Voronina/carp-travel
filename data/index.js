@@ -117,3 +117,10 @@ export const advantagesList = [
       "Unleash your potential through unforgettable projects showcasing Carpathian beauty.",
   },
 ];
+
+export const socialMediaLinks = [
+  { id: 1, title: "facebook" },
+  { id: 2, title: "instagram" },
+  { id: 3, title: "youtube" },
+  { id: 4, title: "tiktok" },
+];
