@@ -124,11 +124,3 @@ export const socialMediaLinks = [
   { id: 3, title: "youtube" },
   { id: 4, title: "tiktok" },
 ];
-
-export const servicesSectionBackgrounds = [
-  "services-bg-0",
-  "services-bg-1",
-  "services-bg-2",
-  "services-bg-3",
-  "services-bg-4",
-];

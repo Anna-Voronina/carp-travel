@@ -3,10 +3,17 @@
 import { useState } from "react";
 import SectionTitle from "./SectionTitle";
 import ServicesSwiper from "./ServicesSwiper";
-import { servicesSectionBackgrounds } from "@data";
 
 const Services = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+
+  const servicesSectionBackgrounds = [
+    "services-bg-0",
+    "services-bg-1",
+    "services-bg-2",
+    "services-bg-3",
+    "services-bg-4",
+  ];
 
   const sectionBackgroundClass = servicesSectionBackgrounds[activeIndex];
 
